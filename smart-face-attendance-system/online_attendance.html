@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Attendance Check-in</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Online Attendance</h1>
+        
+        <div id="entry-section">
+            <p>Please enter your registration number to begin.</p>
+            <div class="form-group">
+                <input type="text" id="regNoInput" placeholder="Enter Registration Number...">
+                <button id="startBtn">Start Camera</button>
+            </div>
+        </div>
+
+        <div id="camera-section" style="display: none;">
+            <div class="video-container">
+                <video id="video" autoplay playsinline></video>
+            </div>
+            <div id="status">Initializing...</div>
+        </div>
+    </div>
+
+    <script src="online_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OUT Attendance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Exit Camera</h1>
+        <div class="video-container">
+            <video id="video" autoplay playsinline></video>
+            <canvas id="overlayCanvas"></canvas>
+        </div>
+        <div id="status">Initializing...</div>
+
+        <hr>
+        <!-- History Search Section -->
+        <div class="history-section">
+            <h2>Student Attendance History</h2>
+            <div class="form-group">
+                <input type="text" id="regNoInput" placeholder="Enter Registration Number...">
+                <button id="searchBtn">Search History</button>
+            </div>
+            <div id="resultsContainer"></div>
+        </div>
+    </div>
+    <!-- Use the new combined script -->
+    <script src="combined_script.js"></script>
+</body>
+</html>
+
